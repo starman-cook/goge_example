@@ -232,6 +232,89 @@ body {
         left: 50px;
     }
 }
+/* ------------ Text-Block -------------- */
+.article {
+    margin-bottom: 71px;
+}
+.article__container {
+    max-width: 882px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.article__text {
+    font-size: 14px;
+    line-height: 32px;
+    color: #5C5C5C;
+    margin: 35px 0;
+}
+.article__title {
+    font-size: 24px;
+    line-height: 158.34%;
+    font-weight: 900;
+    color: #FF8A00;
+    max-width: 385px;
+    margin: 69px 0;
+}
+.article__canvas {
+    max-width: 882px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: auto; */
+    background: gray;
+}
+.article__image {
+    display: block;
+    width: 100%;
+}
+.article__share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.article__tags {
+    font-size: 14px;
+    line-height: 23px;
+    color: #5C5C5C;
+    margin: 35px 0;
+}
+.share {
+    max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share__text {
+    font-size: 14px;
+    line-height: 23px;
+    color: #5C5C5C;
+    margin-right: 27px;
+}
+.share__link--facebook {
+    background: url(../images/ic-facebook.svg);
+}
+.share__link--twitter {
+    background: url(../images/ic-twitter.svg);
+}
+.share__link--youtube {
+    background: url(../images/ic-youtube.svg);
+}
+.share__link {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.share__link:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 
 
