@@ -310,8 +310,51 @@ body {
 .share__link:hover {
     transform: scale(1.2);
 }
-
-
+/* ------------ Article Navigation Buttons -------------- */
+.navigation {
+    margin-bottom: 130px;
+}
+.navigation__container {
+    max-width: 882px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation__buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+}
+.navigation__buttons--prev {
+    align-items: flex-start;
+}
+.navigation__buttons--next {
+    align-items: flex-end;
+}
+.navigation__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.navigation__title--left {
+    color: #5C5C5C;
+}
+.navigation__title--right {
+    color: #FF8A00;
+    text-align: right;
+}
+.navigation__link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 17px;
+    color: #989898;
+}
+.navigation__link:hover {
+    color: #ffc000;
+}
 
 
 
