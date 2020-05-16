@@ -121,6 +121,17 @@ body {
         width: 160px;
         margin: 0 10px;
     }
+    .nav-menu {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    .nav-menu__basket {
+        order: 2;
+    }
+    .nav-menu__link {
+        margin: 0;
+        padding: 0;
+    }
 }
 @media screen and (min-width: 1024px) {
     .logo {
@@ -128,15 +139,7 @@ body {
         margin: 0;
     }
     .nav-menu {
-        flex-direction: row;
         margin: 0;
-    }
-    .nav-menu__link {
-        margin: 0;
-        padding: 0;
-    }
-    .nav-menu__basket {
-        order: 2;
     }
     .btn-menu {
         margin: 0;
@@ -149,5 +152,175 @@ body {
     .nav-menu {
         margin-right: 20px;
         margin-left: auto;
+    }
+}
+
+
+
+
+
+
+
+/* ------------ Footer -------------- */
+/* prefooter */
+.prefooter {
+    background: #212121;
+}
+.prefooter__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 38px 20px;
+}
+.prefooter__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    flex-basis: 100%;
+}
+.prefoter__col--push-down {
+    transform: translate(0, 56px);
+}
+.prefooter__title {
+    font-size: 15px;
+    line-height: 175.78%;
+    color: #FFFFFF;
+}
+.prefooter__link {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 175.78%;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+.prefooter__link:hover {
+    color: #ffc000;
+}
+.prefooter__link:active {
+    color: #ff8a00;
+}
+.prefooter__link--shorten {
+    max-width: 238px;
+}
+.footer-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF; 
+    max-width: 265px;
+}
+.logo-footer {
+    width: 145px;
+    height: 34px;
+    display: inline-block;
+    background: url(../images/logo.svg) center no-repeat;
+    background-size: cover;
+    margin: 0 0 15px 0;
+}
+.icons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.icon-footer__link--facebook {
+    background: url(../images/ic-facebook.svg);
+}
+.icon-footer__link--twitter {
+    background: url(../images/ic-twitter.svg);
+}
+.icon-footer__link--youtube {
+    background: url(../images/ic-youtube.svg);
+}
+.icon-footer__link--dribble {
+    background: url(../images/ic-dribble.svg);
+}
+.icon-footer__link {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.icon-footer__link:hover {
+    transform: scale(1.2);
+}
+/* copyrights footer */
+.footer {
+    background: black;
+}
+.footer__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+}
+.copyright-block__text {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: white;
+}
+.copyright-block__link {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.copyright-block__link:hover {
+    color: #ffc000;
+    border-bottom: 1px solid #ffc000;
+}
+.copyright-block {
+    margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+    .prefooter__container {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .prefooter__col {
+        margin-bottom: 0;
+        align-items: flex-start;
+        text-align: left;
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    .prefooter-col--push-right {
+        flex-grow: 2;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .prefooter__col--push-down {
+        align-self: flex-end;
+        transform: translate(0, -30px);
+    }
+    .prefooter__link {
+        margin: 0;
+    } 
+
+    .copyright-block__link {
+        margin: 0;
+    }
+    .copyright-block__link--move-left {
+        margin-left: 30px;
+    }
+    .footer__container {
+        padding: 0 20px;
+    }
+    .copyright-block {
+        margin: 0;
     }
 }
