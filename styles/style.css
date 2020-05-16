@@ -6,6 +6,7 @@ body {
 .header {
     width: 100%;
     box-shadow: 0 12px 35px rgba(160, 121, 0, 0.2);
+    margin-bottom: 114px;
 }
 .header__container {
     max-width: 1300px;
@@ -41,9 +42,6 @@ body {
     color: #ffc000;
     margin: 30px;
     order: 1;
-}
-.nav-menu__link:active {
-    font-weight: bold;
 }
 .nav-menu__link::after {
     content: "";
@@ -154,8 +152,86 @@ body {
         margin-left: auto;
     }
 }
-
-
+/* ------------ Promo -------------- */
+.promo {
+    margin-bottom: 159px;
+}
+.promo__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.promo__title {
+    font-weight: 900;
+    max-width: 534px;
+    font-size: 44px;
+    line-height: 158.34%;
+    color: #ff8a00;
+    margin: 0 auto;
+    text-align: center;
+}
+.promo-author {
+    font-size: 18px;
+    line-height: 33px;
+    color: #5C5C5C;
+}
+.arrows {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 46px;
+    max-width: 110px;
+    margin: 69px auto 0;
+}
+.arrows__arrow {
+    transform: scale(1.5);
+    display: inline-block;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #FFF7DF url(../images/ic-arrow-orange.svg) center no-repeat;
+}
+.arrows__arrow--right {
+    transform: scale(1.5) rotate(180deg);
+    left: 80px;
+}
+.arrows__arrow:hover {
+    width: 46px;
+    height: 46px;
+    background: url(../images/ic-arrow-white.svg) center no-repeat,
+                linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+}
+.arrows__arrow--left:hover {
+    transform: translate(-7px, 0) rotate(180deg);
+}
+.arrows__arrow--right:hover {
+    transform: translate(-7px, 0);
+}
+@media screen and (min-width: 1200px) {
+    .promo__container {
+        text-align: left;
+    }
+    .promo__title {
+        text-align: left;
+        margin: 0;
+    }
+    .arrows {
+        margin: 69px 0 0 0;
+    }
+    .arrows {
+        max-width: 80px;
+    }
+    .arrows__arrow {
+        transform: scale(1);
+    }
+    .arrows__arrow--right {
+        transform: scale(1) rotate(180deg);
+        left: 50px;
+    }
+}
 
 
 
